@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Header } from 'react-native-elements';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
+      <Header  backgroundColor = {'#9C8210'}
+          centerComponent = {{
+            text: 'Monkey Chunkey',
+            style: {color: '#fff', fontSize: 20}
+          }}
+          />
     </View>
   );
 }
